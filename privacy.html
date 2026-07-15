@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Ultra Notes</title>
+<style>
+  :root {
+    --bg: #FAF9F6;
+    --ink: #22302C;
+    --ink-soft: #4B5A55;
+    --accent: #1E3A37;
+    --accent-soft: #D6F2EE;
+    --rule: #DCE6E2;
+    --card: #FFFFFF;
+    --max: 760px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.hero {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  .meta {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .lede {
+    margin-top: 22px;
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+
+  nav.toc {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 44px;
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+  }
+  nav.toc ol {
+    columns: 2;
+    -webkit-columns: 2;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14.5px;
+  }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover { border-bottom-color: var(--accent); }
+
+  section { margin-bottom: 40px; scroll-margin-top: 24px; }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 4px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 15.5px;
+    margin: 20px 0 6px;
+    color: var(--accent);
+  }
+
+  p { margin: 12px 0; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 16px 0;
+    font-size: 14.5px;
+  }
+  .callout strong { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { color: var(--ink-soft); font-weight: 700; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  code {
+    background: var(--accent-soft);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  a.link { color: var(--accent); }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 56px;
+    padding-top: 24px;
+    color: var(--ink-soft);
+    font-size: 13.5px;
+  }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+    h1 { font-size: 27px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>Ultra Notes</h1>
+    <p class="meta">Package: <code>com.ultranotes.app</code> &nbsp;·&nbsp; Effective date: 16 July 2026 &nbsp;·&nbsp; Last updated: 16 July 2026</p>
+    <p class="lede">
+      Ultra Notes is built around one idea: your notes belong on your device, not on someone else's server.
+      This page explains, in plain terms, exactly what stays on your phone, what you can optionally send
+      to your own Google Drive, and what — if anything — reaches us. Short version: nothing reaches us.
+    </p>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#local-data">Data stored on your device</a></li>
+      <li><a href="#locked-notes">Locked notes &amp; encryption</a></li>
+      <li><a href="#local-backup">Local backup &amp; restore</a></li>
+      <li><a href="#drive-backup">Google Drive backup (optional)</a></li>
+      <li><a href="#biometric">Biometric unlock</a></li>
+      <li><a href="#link-preview">Link previews</a></li>
+      <li><a href="#sharing">Sharing notes</a></li>
+      <li><a href="#not-collected">What we don't do</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#your-choices">Your choices &amp; data deletion</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="summary">
+    <h2><span class="num">01</span>Summary</h2>
+    <p>Ultra Notes does not require an account, does not run ads, does not use analytics or tracking
+      SDKs, and does not have a server of ours that your notes pass through. Everything you write is
+      stored locally on your device in an encrypted-when-locked database. Two features are the only
+      ones that ever touch a network:</p>
+    <ul>
+      <li><strong>Link previews</strong> — fetches a thumbnail directly from a website you paste, if enabled.</li>
+      <li><strong>Google Drive backup</strong> — only if you explicitly connect your Google account, storing a copy of your notes in a private folder in your own Drive.</li>
+    </ul>
+    <p>Neither of these sends anything to us. The rest of this page covers each part of the app in detail.</p>
+  </section>
+
+  <section id="local-data">
+    <h2><span class="num">02</span>Data stored on your device</h2>
+    <p>Everything you create in Ultra Notes — note titles, body text, checklist items, colors, pin/archive
+      state, and app settings — is stored in a local database on your device only. This data:</p>
+    <ul>
+      <li>Is never transmitted to us. We do not operate a server that receives your notes.</li>
+      <li>Is not visible to us in any form, aggregated or otherwise.</li>
+      <li>Stays on the device until you delete it, back it up yourself, or uninstall the app.</li>
+    </ul>
+  </section>
+
+  <section id="locked-notes">
+    <h2><span class="num">03</span>Locked notes &amp; encryption</h2>
+    <p>When you lock a note, its text is encrypted on your device using AES-256-GCM, with the encryption
+      key derived from the passphrase you set (via PBKDF2, 150,000 iterations).</p>
+    <div class="callout">
+      <strong>Your passphrase is never stored anywhere</strong>, not on your device and not by us.
+      If you forget it, the note's content cannot be recovered by you, by us, or by anyone else.
+    </div>
+    <p>Locked notes remain encrypted in local storage, in local backup files, and in Google Drive backups
+      alike — the passphrase never leaves your device to make this possible.</p>
+  </section>
+
+  <section id="local-backup">
+    <h2><span class="num">04</span>Local backup &amp; restore</h2>
+    <p>You can export your notes to a JSON file and restore from one, using Android's standard file
+      picker. You choose exactly where that file is saved — a folder, cloud storage app, USB drive,
+      wherever you pick. We have no access to this file and no visibility into whether or where you
+      created one.</p>
+  </section>
+
+  <section id="drive-backup">
+    <h2><span class="num">05</span>Google Drive backup (optional)</h2>
+    <p>Ultra Notes can back up your notes to a private, hidden folder in your own Google Drive, called
+      the <em>App Data folder</em>. This feature is entirely optional and only activates when you tap
+      "Back Up to Drive" or turn on scheduled auto-backup in Settings.</p>
+    <table>
+      <tr><th>What happens</th><th>Detail</th></tr>
+      <tr><td>Where it's stored</td><td>A folder only Ultra Notes can access. It does not appear in your regular Google Drive file list and counts against your own Drive storage quota, not ours.</td></tr>
+      <tr><td>What's in it</td><td>The same JSON export used for local backup. Locked notes stay encrypted inside it exactly as they are on your device.</td></tr>
+      <tr><td>Who can read it</td><td>Only you, via your own Google account authorization, and Google, as the infrastructure provider storing the file on your behalf. We do not have access to this file.</td></tr>
+      <tr><td>Permission requested</td><td>A single, narrow Google scope (<code>drive.appdata</code>) — Ultra Notes never requests access to your other Drive files.</td></tr>
+      <tr><td>Auto-backup</td><td>If you set a schedule (daily/weekly/monthly), a background job uploads a fresh copy at that interval, only while you remain signed in and only over a network connection.</td></tr>
+    </table>
+    <p>You can disconnect this at any time from your
+      <a class="link" href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a>,
+      and you can delete the backup file itself from Drive's storage settings. Google's own handling of
+      data stored via this API is governed by the
+      <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+  </section>
+
+  <section id="biometric">
+    <h2><span class="num">06</span>Biometric unlock</h2>
+    <p>If you enable fingerprint or face unlock for the app, this is handled entirely by Android's own
+      BiometricPrompt system. Ultra Notes never receives, sees, or stores your fingerprint or face data
+      — your device's operating system verifies your identity and simply tells the app "yes" or "no."</p>
+  </section>
+
+  <section id="link-preview">
+    <h2><span class="num">07</span>Link previews</h2>
+    <p>When rich link previews are enabled (on by default, toggle in Settings) and a note contains a
+      web link, Ultra Notes fetches a preview image directly from that website to display it. This means
+      the linked website receives a request from your device — revealing that URL and your device's IP
+      address to that third-party site, the same way it would if you opened the link in a browser.
+      No data about the request passes through us. You can turn this off entirely in Settings if you'd
+      rather links never be fetched.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">08</span>Sharing notes</h2>
+    <p>The share button hands a note's text to Android's standard share sheet, so you can send it via
+      whichever app you choose — Messages, email, WhatsApp, and so on. This only happens when you tap
+      it, and the note content goes only to the app/contact you select — never through us.</p>
+  </section>
+
+  <section id="not-collected">
+    <h2><span class="num">09</span>What we don't do</h2>
+    <ul>
+      <li>No account or sign-up is required to use the app.</li>
+      <li>No advertising or ad networks.</li>
+      <li>No analytics or usage-tracking SDKs.</li>
+      <li>No crash-reporting services that transmit device or usage data off-device.</li>
+      <li>We do not sell or share your data with advertisers or data brokers, because we don't collect it in the first place.</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">10</span>Children's privacy</h2>
+    <p>Ultra Notes is not directed at children under 13, and we do not knowingly collect personal
+      information from children. Since the app itself collects nothing from any user, this applies
+      equally across all ages.</p>
+  </section>
+
+  <section id="your-choices">
+    <h2><span class="num">11</span>Your choices &amp; data deletion</h2>
+    <ul>
+      <li><strong>Delete everything locally:</strong> uninstall the app, or clear individual notes from within it.</li>
+      <li><strong>Delete your Drive backup:</strong> remove the backup file from Google Drive's storage management, or revoke Ultra Notes' access from your Google Account permissions page.</li>
+      <li><strong>Delete a local backup file:</strong> it's a plain file you saved yourself — delete it the same way you'd delete any file on your device or cloud storage.</li>
+    </ul>
+    <p>Because we never receive your data, there is nothing on our end to request deletion of — deleting
+      it on your device and in your own Drive/backup locations removes it completely.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">12</span>Changes to this policy</h2>
+    <p>If this policy changes, the "Last updated" date at the top of this page will change accordingly.
+      Material changes affecting how any data is handled will also be noted in the app's release notes.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">13</span>Contact us</h2>
+    <p>Questions about this policy or how Ultra Notes handles data can be sent to:</p>
+    <p><a class="link" href="mailto:[email protected]">[email protected]</a></p>
+  </section>
+
+  <footer>
+    Ultra Notes — a private, on-device notes app. This page is provided to satisfy Google Play's
+    Data Safety and privacy policy requirements and describes the app's data handling as of the
+    effective date above.
+  </footer>
+
+</div>
+</body>
+</html>
